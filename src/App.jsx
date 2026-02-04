@@ -3,7 +3,7 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Initiatives from './components/Initiatives'
 import Gallery from './components/Gallery'
-import Faculty from './components/Faculty'
+import Team from './components/Team'
 import Footer from './components/Footer'
 import './App.css'
 
@@ -15,7 +15,7 @@ function App() {
       <About />
       <Initiatives />
       <Gallery />
-      <Faculty />
+      <Team />
       <Footer />
     </div>
   )

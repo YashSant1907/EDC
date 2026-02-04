@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import './Gallery.css';
 
 function Gallery() {
@@ -49,22 +50,71 @@ function Gallery() {
     }
   ];
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: 0.5
+      }
+    }
+  };
+
   return (
     <section id="gallery" className="gallery">
       <div className="gallery-container">
-        <h2 className="section-title">Gallery</h2>
-        <p className="gallery-subtitle">Moments from our journey of innovation and entrepreneurship</p>
+        <motion.h2
+          className="section-title"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          Gallery
+        </motion.h2>
+        <motion.p
+          className="gallery-subtitle"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
+          Moments from our journey of innovation and entrepreneurship
+        </motion.p>
 
-        <div className="masonry-grid">
+        <motion.div
+          className="masonry-grid"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={containerVariants}
+        >
           {galleryImages.map((image) => (
-            <div key={image.id} className="gallery-item">
+            <motion.div
+              key={image.id}
+              className="gallery-item"
+              variants={itemVariants}
+              whileHover={{ scale: 1.05, zIndex: 10 }}
+              transition={{ duration: 0.3 }}
+            >
               <img src={image.url} alt={image.caption} />
               <div className="gallery-overlay">
                 <p className="gallery-caption">{image.caption}</p>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

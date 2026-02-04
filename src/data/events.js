@@ -1,19 +1,19 @@
 export const upcomingEvents = [
   {
     id: 1,
-    title: "February Hackathon 2025",
-    description: "Join us this February for 24 hours of innovation, coding, and problem-solving. Build solutions that matter!",
+    title: "Huge Ideathon 2025",
+    description: "The biggest ideation competition of the year! Present your groundbreaking ideas and compete for exciting prizes. Connect with mentors, investors, and fellow innovators.",
     isHighlighted: true,
-    poster: "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800",
-    date: "February 15-16, 2025"
+    poster: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800",
+    date: "February 2025 (Date TBD)"
   },
   {
     id: 2,
-    title: "Ideathon 2025",
-    description: "Pitch your innovative idea and get expert feedback from industry leaders and successful entrepreneurs.",
-    isHighlighted: false,
-    poster: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800",
-    date: "February 2025"
+    title: "E-Summit 2025",
+    description: "Annual Entrepreneurship Summit bringing together industry leaders, successful entrepreneurs, and aspiring founders. Experience keynote sessions, panel discussions, startup exhibitions, and networking opportunities.",
+    isHighlighted: true,
+    poster: "https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=800",
+    date: "2025 (Date TBD)"
   }
 ];
 
