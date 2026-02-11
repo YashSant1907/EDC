@@ -141,7 +141,7 @@ function Hero() {
         transition={{ duration: 1, delay: 2 }}
         style={{ opacity: useTransform(scrollYProgress, [0, 0.1], [1, 0]) }}
       >
-        <span className="scroll-text">Scroll Down</span>
+        <span className="scroll-text"></span>
         <motion.div
           className="scroll-arrow"
           animate={{ y: [0, 10, 0] }}
