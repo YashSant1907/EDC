@@ -25,9 +25,9 @@ export const facultyIncharge = [
         image: imgNaveen,
         description: "Dr. Naveen Aggarwal is a Professor of Computer Science and Engineering at UIET with over 23 years of experience. He serves as the Coordinator of the Design Innovation Centre and leads the Panjab University Incubation Centre. An alumnus of IIT Kharagpur and ISB Hyderabad, he has 185+ publications, 2 granted patents, and has managed projects worth over ₹10 Crores.",
         highlights: [
-          { icon: "🎯", text: "23+ Years Experience" },
-          { icon: "💰", text: "₹10 Cr+ Projects" },
-          { icon: "📜", text: "2 Patents Granted" }
+          { icon: "", text: "23+ Years Experience" },
+          { icon: "", text: "₹10 Cr+ Projects" },
+          { icon: "", text: "2 Patents Granted" }
         ]
       },
       {
@@ -38,9 +38,9 @@ export const facultyIncharge = [
         image: imgMamta,
         description: "Prof. Mamta Juneja has over 22 years of experience in AI, IoT, and Medical Devices. She holds 3 patents in Smart Medical Devices and has received multiple startup grants. She has secured ₹10 Crores in funding from the Ministry of Education and other agencies. Her expertise in research commercialization provides vital guidance to student founders.",
         highlights: [
-          { icon: "🏥", text: "Medical Device Innovation" },
-          { icon: "💡", text: "3 Patents Held" },
-          { icon: "🚀", text: "2 Startup Grants" }
+          { icon: "", text: "Medical Device Innovation" },
+          { icon: "", text: "3 Patents Held" },
+          { icon: "", text: "2 Startup Grants" }
         ]
   }
 ];

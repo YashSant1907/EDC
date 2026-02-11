@@ -49,15 +49,15 @@ function About() {
           </motion.p>
           <motion.div className="about-stats" variants={containerVariants}>
             <motion.div className="stat-item" variants={itemVariants} whileHover={{ scale: 1.05 }}>
-              <span className="stat-number">50+</span>
+              <span className="stat-number">5+</span>
               <span className="stat-label">Events Organized</span>
             </motion.div>
             <motion.div className="stat-item" variants={itemVariants} whileHover={{ scale: 1.05 }}>
-              <span className="stat-number">1000+</span>
+              <span className="stat-number">100+</span>
               <span className="stat-label">Students Impacted</span>
             </motion.div>
             <motion.div className="stat-item" variants={itemVariants} whileHover={{ scale: 1.05 }}>
-              <span className="stat-number">20+</span>
+              <span className="stat-number">2+</span>
               <span className="stat-label">Startup Mentors</span>
             </motion.div>
           </motion.div>
