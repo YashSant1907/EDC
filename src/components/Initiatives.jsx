@@ -37,6 +37,7 @@ function Initiatives() {
           Our Initiatives
         </motion.h2>
 
+        {/* Upcoming Events Section */}
         <div className="initiatives-section">
           <motion.h3
             className="subsection-title"
@@ -77,6 +78,7 @@ function Initiatives() {
           </motion.div>
         </div>
 
+        {/* Past Events Section */}
         <div className="initiatives-section">
           <motion.h3
             className="subsection-title"
@@ -88,7 +90,7 @@ function Initiatives() {
             Past Events
           </motion.h3>
           <motion.div
-            className="events-grid past-events"
+            className="events-grid past-events-grid" // Added specific class for styling
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-50px" }}
@@ -101,12 +103,9 @@ function Initiatives() {
                 variants={cardVariants}
                 whileHover={{ y: -10, transition: { duration: 0.3 } }}
               >
-                <div className="past-event-images">
-                  {event.images.map((image, index) => (
-                    <div key={index} className="past-event-image">
-                      <img src={image} alt={`${event.title} ${index + 1}`} />
-                    </div>
-                  ))}
+                {/* CHANGED: Only showing the first image (index 0) */}
+                <div className="event-image">
+                   <img src={event.images[0]} alt={event.title} />
                 </div>
                 <div className="event-content">
                   <h4 className="event-title">{event.title}</h4>

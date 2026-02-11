@@ -81,7 +81,7 @@ function Hero() {
               animate={{ scale: 1 }}
               transition={{ duration: 0.5, delay: 1.2 }}
             >
-              50+
+              2+
             </motion.span>
             <span className="stat-label">Events</span>
           </div>
@@ -92,7 +92,7 @@ function Hero() {
               animate={{ scale: 1 }}
               transition={{ duration: 0.5, delay: 1.4 }}
             >
-              1000+
+              50+
             </motion.span>
             <span className="stat-label">Students</span>
           </div>
@@ -103,7 +103,7 @@ function Hero() {
               animate={{ scale: 1 }}
               transition={{ duration: 0.5, delay: 1.6 }}
             >
-              20+
+              2
             </motion.span>
             <span className="stat-label">Mentors</span>
           </div>

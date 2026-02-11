@@ -154,3 +154,143 @@
     height: 200px;
   }
 }
+.initiatives {
+  padding: 6rem 2rem;
+  background-color: #1B263B;
+}
+
+.initiatives-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.initiatives-section {
+  margin-bottom: 4rem;
+}
+
+.subsection-title {
+  font-size: 2rem;
+  color: #E0E1DD;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Default Grid for Upcoming Events (Adaptive) */
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+/* NEW: Specific Grid for Past Events (Strict 2 Columns) */
+.past-events-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Exactly two columns */
+  gap: 2rem;
+}
+
+.event-card {
+  background-color: #415A77;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+.event-card.highlighted {
+  border: 2px solid #778DA9;
+  background: linear-gradient(135deg, #415A77 0%, #4A6382 100%);
+}
+
+.event-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: linear-gradient(135deg, #778DA9 0%, #8E9AAF 100%);
+  color: #0D1B2A;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  z-index: 10;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.event-image {
+  width: 100%;
+  height: 280px; /* Increased height slightly for better visibility */
+  overflow: hidden;
+}
+
+.event-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.event-card:hover .event-image img {
+  transform: scale(1.1);
+}
+
+.event-content {
+  padding: 1.5rem;
+  flex-grow: 1; /* Ensures content stretches evenly */
+}
+
+.event-title {
+  font-size: 1.5rem;
+  color: #E0E1DD;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.event-date {
+  font-size: 0.95rem;
+  color: #778DA9;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.event-description {
+  font-size: 1rem;
+  color: #E0E1DD;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .initiatives {
+    padding: 4rem 1.5rem;
+  }
+
+  /* On mobile, switch back to 1 column for both grids */
+  .events-grid, 
+  .past-events-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .subsection-title {
+    font-size: 1.5rem;
+  }
+
+  .event-title {
+    font-size: 1.3rem;
+  }
+
+  .event-image {
+    height: 220px;
+  }
+}

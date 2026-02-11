@@ -1,6 +1,8 @@
+/* Faculty.css */
+
 .faculty {
   padding: 6rem 2rem;
-  background-color: #1B263B;
+  background-color: #1B263B; /* Dark Blue Theme */
 }
 
 .faculty-container {
@@ -8,14 +10,46 @@
   margin: 0 auto;
 }
 
-.faculty-content {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 4rem;
-  align-items: center;
-  margin-top: 3rem;
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+  color: #E0E1DD;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
+/* Wrapper for the list of faculty members */
+.faculty-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem; /* Spacing between Naveen Sir and Mamta Ma'am */
+}
+
+/* Individual Card Styling */
+.faculty-card {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Image takes 1 part, Text takes 2 parts */
+  gap: 4rem;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.02); /* Very subtle background for the card */
+  padding: 2rem;
+  border-radius: 20px;
+  border: 1px solid rgba(119, 141, 169, 0.1);
+}
+
+/* Alternating Layout: Even numbered cards (2nd, 4th...) will flip */
+.faculty-card:nth-child(even) {
+  direction: rtl; /* Flips the grid order */
+}
+
+.faculty-card:nth-child(even) .faculty-details {
+  direction: ltr; /* Reset text direction to Left-to-Right */
+  text-align: left; /* Keep text aligned left (optional: change to right if preferred) */
+}
+
+/* Image Styling */
 .faculty-image-wrapper {
   display: flex;
   justify-content: center;
@@ -43,6 +77,7 @@
   object-fit: cover;
 }
 
+/* Text Styling */
 .faculty-details {
   color: #E0E1DD;
 }
@@ -57,8 +92,17 @@
 .faculty-designation {
   font-size: 1.3rem;
   color: #778DA9;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   font-weight: 500;
+}
+
+.faculty-role {
+  font-size: 1rem;
+  color: #415A77; /* Slightly darker accent */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
 }
 
 .faculty-description {
@@ -69,9 +113,10 @@
   margin-bottom: 2rem;
 }
 
+/* Highlights (Icons) Styling */
 .faculty-highlights {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Stack vertically */
   gap: 1rem;
 }
 
@@ -84,6 +129,7 @@
   border-radius: 8px;
   border-left: 4px solid #778DA9;
   transition: all 0.3s ease;
+  width: fit-content; /* Only take necessary width */
 }
 
 .highlight-item:hover {
@@ -101,25 +147,38 @@
   font-weight: 500;
 }
 
+/* Mobile Responsiveness */
 @media (max-width: 1024px) {
-  .faculty-content {
-    grid-template-columns: 1fr;
+  .faculty-card,
+  .faculty-card:nth-child(even) {
+    grid-template-columns: 1fr; /* Stack vertically on mobile */
+    direction: ltr; /* Remove alternating direction on mobile */
+    text-align: center;
     gap: 2rem;
+  }
+
+  .faculty-card:nth-child(even) .faculty-details {
     text-align: center;
   }
 
   .faculty-highlights {
-    align-items: center;
+    align-items: center; /* Center the highlights on mobile */
   }
 
   .highlight-item {
+    width: 100%; /* Full width highlights on mobile */
     max-width: 400px;
+    justify-content: center;
   }
 }
 
 @media (max-width: 768px) {
   .faculty {
     padding: 4rem 1.5rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
   }
 
   .faculty-name {

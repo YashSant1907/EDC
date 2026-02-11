@@ -1,47 +1,77 @@
+import Aaditi from "../assets/Aaditi.jpeg"
+import imgNaveen from '../assets/naveensir.jpeg';
+import imgMamta from '../assets/mamta.jpeg';
+import amn from "../assets/amn.jpeg";
+import pratham from "../assets/pratham.jpeg";
+import pratyush from "../assets/pratyush.jpeg";
+import prashant7ft from "../assets/prashant7ft.jpeg";
+import Div from "../assets/div.jpeg"
+import satu from "../assets/satu.jpeg"
+import yash from "../assets/yashu.jpeg"
+import anmol from "../assets/anmol.jpeg"
+import nidhi from "../assets/nidhi.jpeg"
+import harshu from "../assets/harsh.jpeg"
+import mukul from "../assets/mukul.jpeg"
+import niku from "../assets/niku.jpeg"
+import tanisha from "../assets/tanisha.jpeg"
+
+
 export const facultyIncharge = [
   {
     id: 1,
-    name: "Dr. Rajesh Kumar",
-    role: "Faculty Incharge",
-    image: "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=600",
-    bio: "Leading EDC UIET's vision for entrepreneurship excellence"
-  },
-  {
-    id: 2,
-    name: "Prof. Priya Sharma",
-    role: "Faculty Incharge",
-    image: "https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=600",
-    bio: "Mentoring the next generation of innovators"
+        name: "Dr. Naveen Aggarwal",
+        designation: "Faculty Incharge, EDC UIET",
+        role: "Professor, CSE | Coordinator, DIC",
+        image: imgNaveen,
+        description: "Dr. Naveen Aggarwal is a Professor of Computer Science and Engineering at UIET with over 23 years of experience. He serves as the Coordinator of the Design Innovation Centre and leads the Panjab University Incubation Centre. An alumnus of IIT Kharagpur and ISB Hyderabad, he has 185+ publications, 2 granted patents, and has managed projects worth over ₹10 Crores.",
+        highlights: [
+          { icon: "🎯", text: "23+ Years Experience" },
+          { icon: "💰", text: "₹10 Cr+ Projects" },
+          { icon: "📜", text: "2 Patents Granted" }
+        ]
+      },
+      {
+        id: 2,
+        name: "Prof. Mamta Juneja",
+        designation: "Faculty Incharge, EDC UIET",
+        role: "Professor | Researcher | Innovator",
+        image: imgMamta,
+        description: "Prof. Mamta Juneja has over 22 years of experience in AI, IoT, and Medical Devices. She holds 3 patents in Smart Medical Devices and has received multiple startup grants. She has secured ₹10 Crores in funding from the Ministry of Education and other agencies. Her expertise in research commercialization provides vital guidance to student founders.",
+        highlights: [
+          { icon: "🏥", text: "Medical Device Innovation" },
+          { icon: "💡", text: "3 Patents Held" },
+          { icon: "🚀", text: "2 Startup Grants" }
+        ]
   }
 ];
 
 export const coreTeam = [
   {
     id: 1,
-    name: "Arjun Verma",
+    name: "Nidhi Verma",
     role: "President",
-    image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600",
+    image: nidhi,
     bio: "Leading EDC UIET towards greater heights"
   },
   {
     id: 2,
-    name: "Ananya Singh",
+    name: "Yash Kumar Sant",
     role: "Vice President",
-    image: "https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=600",
+    image: yash,
     bio: "Driving innovation and growth"
   },
   {
     id: 3,
-    name: "Rohan Mehta",
+    name: "Mukul Bhardwaj",
     role: "Vice President",
-    image: "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=600",
+    image: mukul,
     bio: "Building bridges between ideas and execution"
   },
   {
     id: 4,
-    name: "Priya Kapoor",
+    name: "Aaditi Malik",
     role: "Secretary",
-    image: "https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=600",
+    image: Aaditi,
     bio: "Ensuring seamless operations"
   }
 ];
@@ -49,82 +79,82 @@ export const coreTeam = [
 export const departmentLeads = [
   {
     id: 1,
-    name: "Vikram Patel",
+    name: "Pratham Mahajan",
     role: "Department Lead",
     department: "Logistics",
-    image: "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=600",
+    image: pratham,
     bio: "Managing events and operations"
   },
   {
     id: 2,
-    name: "Kavya Reddy",
+    name: "Prashant Chaudhary",
     role: "Department Lead",
     department: "Logistics",
-    image: "https://images.pexels.com/photos/3763152/pexels-photo-3763152.jpeg?auto=compress&cs=tinysrgb&w=600",
+    image: prashant7ft,
     bio: "Coordinating seamless event execution"
   },
   {
     id: 3,
-    name: "Aditya Sharma",
+    name: "Amanpreet kaur",
     role: "Department Lead",
     department: "PR and Marketing",
-    image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600",
+    image: amn,
     bio: "Building brand presence"
   },
   {
     id: 4,
-    name: "Sneha Gupta",
+    name:"Pratyush Kumar",
     role: "Department Lead",
     department: "PR and Marketing",
-    image: "https://images.pexels.com/photos/3756681/pexels-photo-3756681.jpeg?auto=compress&cs=tinysrgb&w=600",
+    image: pratyush,
     bio: "Crafting compelling narratives"
   },
   {
     id: 5,
-    name: "Karan Malhotra",
+    name: "Anmol Malhotra",
     role: "Department Lead",
     department: "Finance and Database",
-    image: "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=600",
+    image: anmol,
     bio: "Managing financial operations"
   },
   {
     id: 6,
-    name: "Ishita Joshi",
+    name: "Nikunj Singla",
     role: "Department Lead",
     department: "Finance and Database",
-    image: "https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=600",
+    image: niku,
     bio: "Maintaining data integrity"
   },
   {
     id: 7,
-    name: "Rahul Khanna",
+    name: "Tanisha Singh",
     role: "Department Lead",
     department: "Social Media and Design",
-    image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600",
+    image: tanisha,
     bio: "Creating visual stories"
   },
   {
     id: 8,
-    name: "Diya Nair",
+    name: "Tathagat Satyam",
     role: "Department Lead",
     department: "Social Media and Design",
-    image: "https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=600",
+    image: satu ,
     bio: "Designing engaging content"
   },
   {
     id: 9,
-    name: "Siddharth Rao",
+    name: "Harsh Saxena",
     role: "Department Lead",
     department: "Tech Innovation",
-    image: "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=600",
+    image: harshu,
     bio: "Driving technological advancement"
   },
   {
     id: 10,
-    name: "Tanvi Desai",
+    name: "Divyansh Attri",
     role: "Department Lead",
     department: "Tech Innovation",
-    image: "https://images.pexels.com/photos/3763152/pexels-photo-3763152.jpeg?auto=compress&cs=tinysrgb&w=600",
+    image: Div,
     bio: "Building innovative solutions"
   }
 ];

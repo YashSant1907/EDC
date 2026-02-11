@@ -37,9 +37,9 @@ function Footer() {
           <div className="footer-section">
             <h4 className="footer-heading">Follow Us</h4>
             <div className="social-links">
-              <a href="#" className="social-link" aria-label="LinkedIn">LinkedIn</a>
-              <a href="#" className="social-link" aria-label="Instagram">Instagram</a>
-              <a href="#" className="social-link" aria-label="Twitter">Twitter</a>
+              <a href="https://www.linkedin.com/company/edc-uiet/" className="social-link" aria-label="LinkedIn">LinkedIn</a>
+              <a href="https://www.instagram.com/ecelluiet?igsh=MWJ6NmNwbXlrd2dnbQ==" className="social-link" aria-label="Instagram">Instagram</a>
+              <a href="officialedc.uiet@gmail.com" className="social-link" aria-label="Email">Email</a>
             </div>
           </div>
         </div>

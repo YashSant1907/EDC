@@ -46,7 +46,7 @@ function Navbar() {
             Team
           </button>
           <button onClick={() => scrollToSection('initiatives')} className="nav-cta">
-            Register for Hackathon
+            Register for Ideathon
           </button>
         </div>
       </div>

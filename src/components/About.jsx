@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
 import './About.css';
+import teamPhoto from "../assets/grpImage.jpeg"
+
 
 function About() {
   const containerVariants = {
@@ -68,7 +70,7 @@ function About() {
           transition={{ duration: 0.8 }}
         >
           <img
-            src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800"
+            src={teamPhoto}
             alt="EDC UIET Events"
           />
           <div className="image-overlay"></div>
